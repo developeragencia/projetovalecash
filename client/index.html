@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="description" content="Vale Cashback - Plataforma completa de cashback e sistema de referências" />
+    <meta name="theme-color" content="#3db54e" />
+    
+    <!-- Favicon e ícones -->
+    <link rel="icon" href="/vale-cashback-icon.png" type="image/png" />
+    <link rel="shortcut icon" href="/vale-cashback-icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/vale-cashback-icon.png" />
+    <link rel="mask-icon" href="/vale-cashback-icon.png" color="#3db54e" />
+    
+    <!-- Manifest para PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Metatags para compartilhamento em redes sociais -->
+    <meta property="og:title" content="Vale Cashback" />
+    <meta property="og:description" content="Plataforma de cashback e sistema de referências para clientes e lojistas" />
+    <meta property="og:image" content="/vale-cashback-icon.png" />
+    <meta property="og:url" content="https://valecashback.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Vale Cashback" />
+    
+    <!-- Apple specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ValeCash" />
+    <link rel="apple-touch-startup-image" href="/vale-cashback-icon.png" />
+    
+    <!-- iOS splash screens -->
+    <link rel="apple-touch-startup-image" href="/vale-cashback-icon.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="/vale-cashback-icon.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="/vale-cashback-icon.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="/vale-cashback-icon.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="/vale-cashback-icon.png" media="(min-device-width: 768px) and (max-device-width: 1024px)" />
+    
+    <title>Vale Cashback</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Script para forçar a exibição da página de boas-vindas -->
+    <script type="text/javascript">
+      // Verificar se estamos na página raiz
+      if (window.location.pathname === '/') {
+        // Forçar redirecionamento direto para a página simples de boas-vindas
+        window.location.href = '/welcome-simple';
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+    
+    <!-- Mensagem de fallback para JavaScript desativado -->
+    <noscript>
+      <div style="padding: 20px; text-align: center; font-family: Arial, sans-serif;">
+        <h2>JavaScript está desativado</h2>
+        <p>Vale Cashback precisa de JavaScript para funcionar corretamente. Por favor, ative o JavaScript no seu navegador.</p>
+      </div>
+    </noscript>
+  </body>
+</html>

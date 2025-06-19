@@ -1,0 +1,40 @@
+Funcionamento das Taxas no Vale Cashback
+Com base nas informações disponíveis no banco de dados e na documentação do sistema, segue o detalhamento de como funcionam as taxas e comissões no Vale Cashback:
+
+Configuração Padrão de Taxas
+A tabela commission_settings do banco de dados revela as seguintes taxas padrão:
+
+Tipo de Taxa	Valor
+Taxa da Plataforma (platform_fee)	2%
+Comissão do Lojista (merchant_commission)	2%
+Cashback do Cliente (client_cashback)	2%
+Bônus de Indicação (referral_bonus)	1%
+Como Funcionam as Taxas
+Para o Lojista:
+Taxa Padrão de Cashback: 2% do valor de cada venda é convertido em cashback para o cliente
+Comissão para a Plataforma: O lojista paga 2% do valor total vendido como comissão para o sistema Vale Cashback
+Exemplo prático:
+Venda de R$ 100,00
+Cliente recebe R$ 2,00 em cashback (2%)
+Lojista paga R$ 2,00 para a plataforma (2%)
+Total de custo para o lojista: R$ 4,00 (4% da venda)
+Para o Cliente:
+Recebimento de Cashback: O cliente recebe 2% do valor de suas compras em pontos de cashback
+Uso do Cashback: Pode ser utilizado em compras futuras ou transferido para outros usuários
+Bônus de Indicação: Recebe 1% do cashback gerado pelos usuários que indicou ao sistema durante os primeiros três meses
+Para o Administrador:
+Configuração de Taxas: Pode alterar as taxas padrão do sistema através do painel administrativo
+Taxas Personalizadas: Pode definir taxas personalizadas para lojas específicas (promoções ou parcerias especiais)
+Aprovação de Saques: Gerencia os pedidos de saque de comissões feitos pelos lojistas
+Recursos de Gestão de Taxas
+No Painel do Lojista:
+Visualização da taxa padrão de cashback (2%)
+Histórico de pagamentos de comissões à plataforma
+Simulador de impacto financeiro
+Calendário de cobranças
+No Painel do Administrador:
+Definição de percentuais padrão para todo o sistema
+Configuração de promoções temporárias com taxas diferenciadas
+Estabelecimento de valores máximos/mínimos para cashback
+Definição de regras específicas por tipo de estabelecimento
+O sistema permite certa flexibilidade nas taxas, mas mantém os 2% como valor padrão tanto para o cashback quanto para a comissão da plataforma.

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" fill="none">
+  <rect width="180" height="180" rx="90" fill="#003366"/>
+  
+  <!-- Circle and arrows -->
+  <circle cx="90" cy="90" r="60" stroke="#a3d45c" stroke-width="8" fill="none"/>
+  
+  <!-- $ sign -->
+  <path d="M90 65V115" stroke="#00843d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M75 70H100C105 70 110 75 110 80C110 85 105 90 100 90H80C75 90 70 95 70 100C70 105 75 110 80 110H105" stroke="#00843d" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Arrows -->
+  <path d="M40 70C50 95 70 110 90 115" stroke="#ff8c26" stroke-width="8" stroke-linecap="round"/>
+  <path d="M35 90L30 75L45 70" fill="none" stroke="#ff8c26" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <path d="M30 95C50 120 70 135 90 140" stroke="#ff8c26" stroke-width="8" stroke-linecap="round"/>
+  <path d="M25 115L20 100L35 95" fill="none" stroke="#ff8c26" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <path d="M140 75C130 100 110 115 90 120" stroke="#a3d45c" stroke-width="8" stroke-linecap="round"/>
+  <path d="M145 55L150 70L135 75" fill="none" stroke="#a3d45c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <path d="M150 50C130 75 110 90 90 95" stroke="#a3d45c" stroke-width="8" stroke-linecap="round"/>
+  <path d="M155 30L160 45L145 50" fill="none" stroke="#a3d45c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

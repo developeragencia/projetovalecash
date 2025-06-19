@@ -1,0 +1,145 @@
+Botão "Entrar" com cor correspondente ao tipo de usuário selecionado
+Indicador de carregamento (spinner) durante a autenticação
+Área de Informação (Hero)
+
+Título "Bem-vindo ao Vale Cashback"
+Descrição breve do sistema
+Lista de benefícios com ícones:
+Acesso a saldo e transações de cashback
+Transferências entre contas
+Sistema de referências e bônus
+Gestão completa para lojistas e administradores
+Mensagens de Feedback
+
+Área para exibição de erros de autenticação
+Mensagens personalizadas por tipo de erro
+Responsividade
+
+Layout adaptativo para dispositivos móveis
+Hero oculto em telas pequenas
+Ajuste de tamanho de fonte e espaçamento conforme tamanho da tela
+Painel do Cliente - Detalhamento Item a Item
+Cabeçalho
+
+Logo pequeno do Vale Cashback
+Nome do cliente logado
+Ícone de notificações com contador
+Menu dropdown de perfil
+Menu Lateral (Sidebar)
+
+Foto/avatar do cliente
+Nome do cliente
+Status da conta
+Links de navegação:
+Dashboard (página inicial)
+Transações
+Transferências
+QR Code
+Indicar Amigos
+Perfil
+Configurações
+Sair
+Dashboard Principal
+
+Card de saldo atual de cashback (destaque)
+Botões rápidos:
+Transferir
+Gerar QR Code
+Ver Histórico
+Gráfico de evolução do saldo de cashback (últimos 6 meses)
+Resumo do mês atual:
+Total ganho
+Total transferido
+Total recebido
+Seção de Transações Recentes
+
+Lista das 5 últimas transações
+Para cada transação:
+Nome da loja
+Data e hora
+Valor da compra
+Valor do cashback
+Status (concluída, pendente)
+Botão "Ver todas as transações"
+Seção de Notificações/Alertas
+
+Promoções de lojas
+Lembretes de cashbacks não utilizados
+Novidades do sistema
+Página de Transações
+
+Filtros:
+Por data
+Por loja
+Por valor
+Por status
+Tabela de transações com paginação
+Opção de busca rápida
+Opção de exportar relatório
+Página de Transferências
+
+Formulário para nova transferência:
+Campo para e-mail/usuário destinatário
+Campo para valor
+Campo para mensagem/descrição
+Botão "Transferir"
+Histórico de transferências enviadas
+Histórico de transferências recebidas
+Página de QR Code
+
+Gerador de QR Code:
+Campo para valor
+Opção de adicionar descrição
+Botão "Gerar QR Code"
+QR Code gerado com opção de download
+Temporizador de validade
+QR Codes recentes gerados
+Página de Indicação
+
+Código de indicação exclusivo
+Opções de compartilhamento (WhatsApp, e-mail, copiar link)
+Lista de amigos indicados
+Status das indicações
+Bônus recebidos por indicações
+Página de Perfil
+
+Dados pessoais editáveis:
+Nome
+E-mail
+Telefone
+Endereço
+Foto/avatar
+Opção de alterar senha
+Configurações de privacidade e notificações
+Painel do Lojista - Detalhamento Item a Item
+Cabeçalho
+
+Logo pequeno do Vale Cashback
+Nome da loja
+Ícone de notificações com contador
+Menu dropdown de perfil
+Menu Lateral (Sidebar)
+
+Logo da loja
+Nome da loja
+Status da loja
+Taxa de comissão atual (2%)
+Links de navegação:
+Dashboard (página inicial)
+Vendas
+Produtos/Serviços
+Scanner QR Code
+Clientes
+Perfil da Loja
+Configurações
+Sair
+Dashboard Principal
+
+Resumo das vendas do dia:
+Total de vendas
+Número de transações
+Valor médio por venda
+Total de comissão (2%)
+Gráfico de vendas (diário, semanal, mensal, anual)
+Ranking de produtos mais vendidos com cashback
+Seção de Vendas Recentes

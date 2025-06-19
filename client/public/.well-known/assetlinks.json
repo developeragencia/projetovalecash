@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.valecashback.app",
+      "sha256_cert_fingerprints": [
+        "59:65:92:3D:5F:AB:9B:2E:1A:F0:75:7D:2A:E2:2B:3F:20:F1:A4:C5:92:9B:F2:B5:F1:EA:2B:3A:97:F2:F2:A3"
+      ]
+    }
+  }
+]

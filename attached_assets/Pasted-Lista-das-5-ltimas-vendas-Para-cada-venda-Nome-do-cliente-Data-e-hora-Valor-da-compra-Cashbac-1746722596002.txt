@@ -1,0 +1,157 @@
+Lista das 5 últimas vendas
+Para cada venda:
+Nome do cliente
+Data e hora
+Valor da compra
+Cashback gerado
+Itens vendidos (resumo)
+Botão "Ver todas as vendas"
+Página de Registro de Vendas
+
+Formulário para nova venda:
+Campo para busca de cliente
+Tabela para adicionar produtos
+Campo para valor total
+Seleção de método de pagamento
+Cálculo automático de cashback (2%)
+Botão "Registrar Venda"
+Opção de aplicar desconto
+Opção de enviar comprovante por e-mail
+Página de Produtos/Serviços
+
+Catálogo de produtos:
+Nome do produto
+Descrição
+Preço
+Categoria
+Estoque (se aplicável)
+Opções de adicionar, editar e remover produtos
+Filtros e busca de produtos
+Opção de importar/exportar lista
+Página de Scanner QR Code
+
+Câmera para leitura de QR Code
+Campos para entrada manual:
+Código de transação
+Valor
+Confirmação de dados do cliente
+Confirmação de pagamento
+Página de Clientes
+
+Lista de clientes da loja
+Para cada cliente:
+Nome
+E-mail
+Número de compras
+Valor total gasto
+Cashback total recebido
+Perfil detalhado de cada cliente
+Histórico de compras por cliente
+Página de Perfil da Loja
+
+Dados da loja editáveis:
+Nome da loja
+CNPJ
+Endereço completo
+Telefone
+E-mail
+Website
+Horário de funcionamento
+Logo da loja
+Configurações de cashback:
+Taxa atual (padrão 2%)
+Promoções temporárias
+Descrição da loja para clientes
+Relatórios Financeiros
+
+Relatório de vendas
+Relatório de cashback gerado
+Relatório de clientes mais frequentes
+Opções de exportação (PDF, Excel)
+Filtros por período
+Painel do Administrador - Detalhamento Item a Item
+Cabeçalho
+
+Logo do Vale Cashback
+Identificação "Painel Administrativo"
+Ícone de notificações com contador
+Menu dropdown de perfil do administrador
+Menu Lateral (Sidebar)
+
+Foto/avatar do administrador
+Nome do administrador
+Status (admin)
+Links de navegação:
+Dashboard (página inicial)
+Usuários
+Lojas
+Transações
+Transferências
+Configurações do Sistema
+Logs e Auditoria
+Suporte
+Sair
+Dashboard Principal
+
+Estatísticas gerais:
+Total de usuários (clientes e lojistas)
+Usuários ativos hoje
+Novas contas (últimos 7 dias)
+Transações hoje
+Volume financeiro total
+Cashback total gerado
+Gráficos de desempenho:
+Crescimento de usuários
+Volume de transações
+Distribuição por tipo de usuário
+Distribuição geográfica (mapa)
+Seção de Alertas e Pendências
+
+Lojistas pendentes de aprovação
+Transações suspeitas
+Usuários com atividades anormais
+Tarefas agendadas
+Página de Gestão de Usuários
+
+Tabela de usuários:
+ID
+Nome
+E-mail
+Tipo (cliente/lojista/admin)
+Status (ativo, inativo, bloqueado)
+Data de cadastro
+Última atividade
+Filtros avançados
+Opções de ação:
+Ver detalhes
+Editar
+Ativar/Desativar
+Bloquear/Desbloquear
+Resetar senha
+Página de Detalhes do Usuário
+
+Dados completos do usuário
+Histórico de transações
+Histórico de transferências
+Saldo atual
+Log de atividades
+Histórico de login
+Página de Gestão de Lojas
+
+Tabela de lojas:
+ID
+Nome
+CNPJ
+Responsável
+Categoria
+Status (ativa, inativa, pendente)
+Data de cadastro
+Volume de transações
+Filtros avançados
+Opções de ação:
+Ver detalhes
+Editar
+Aprovar/Rejeitar
+Ativar/Desativar
+Ajustar taxa de comissão
+Página de Detalhes da Loja

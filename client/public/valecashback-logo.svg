@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 0 640 240" fill="none">
+  <!-- VALE text -->
+  <path d="M40 80L60 170H80L95 110L110 170H130L150 80H128L118 140L105 80H85L72 140L62 80H40Z" fill="#3B4B1B"/>
+  <path d="M150 80H187L192 102H170L173 112H192L197 134H178L181 144H205L210 170H150V80Z" fill="#3B4B1B"/>
+  <path d="M212 80H240L255 135V80H278V170H250L235 115V170H212V80Z" fill="#3B4B1B"/>
+  <path d="M280 80H330V105H310V170H300V105H280V80Z" fill="#3B4B1B"/>
+  
+  <!-- CASHBACK text -->
+  <path d="M360 80H410C420 80 428 82 435 88C442 94 445 102 445 112C445 122 442 130 435 136C428 142 420 144 410 144H380V170H360V80ZM380 124H405C410 124 414 122 416 120C418 118 420 114 420 110C420 106 418 102 416 100C414 98 410 96 405 96H380V124Z" fill="#3B4B1B"/>
+  <path d="M448 80H510L515 104H478L481 114H512L517 138H486L489 148H528L533 170H448V80Z" fill="#3B4B1B"/>
+  <path d="M535 80H555L600 130V80H620V170H600L555 120V170H535V80Z" fill="#3B4B1B"/>
+  <path d="M395 170L455 170C480 170 497 162 505 145C513 128 510 105 490 95L475 108C485 114 486 125 482 134C478 143 468 148 455 148L395 148V170Z" fill="#3B4B1B"/>
+  <path d="M385 148H325C300 148 285 140 275 123C265 106 265 83 285 73L300 86C290 92 290 105 295 114C300 123 310 126 325 126H385V148Z" fill="#3B4B1B"/>
+  
+  <!-- Circle and arrows -->
+  <circle cx="260" cy="130" r="70" stroke="#a3d45c" stroke-width="12" fill="none"/>
+  
+  <!-- $ sign -->
+  <path d="M260 105V155" stroke="#00843d" stroke-width="12" stroke-linecap="round"/>
+  <path d="M245 110H270C275 110 280 115 280 120C280 125 275 130 270 130H250C245 130 240 135 240 140C240 145 245 150 250 150H275" stroke="#00843d" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Arrows -->
+  <path d="M210 110C220 135 240 150 260 155" stroke="#ff8c26" stroke-width="12" stroke-linecap="round"/>
+  <path d="M205 130L200 115L215 110" fill="none" stroke="#ff8c26" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <path d="M200 135C220 160 240 175 260 180" stroke="#ff8c26" stroke-width="12" stroke-linecap="round"/>
+  <path d="M195 155L190 140L205 135" fill="none" stroke="#ff8c26" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <path d="M310 115C300 140 280 155 260 160" stroke="#a3d45c" stroke-width="12" stroke-linecap="round"/>
+  <path d="M315 95L320 110L305 115" fill="none" stroke="#a3d45c" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <path d="M320 90C300 115 280 130 260 135" stroke="#a3d45c" stroke-width="12" stroke-linecap="round"/>
+  <path d="M325 70L330 85L315 90" fill="none" stroke="#a3d45c" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

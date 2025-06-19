@@ -1,0 +1,283 @@
+@import './styles/pwa-install.css';
+@import './styles/modern-theme.css';
+@import './styles/welcome-animations.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  
+  /* Caixa Econômica colors */
+  --primary: 208 100% 35%; /* #0066B3 */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 100% 40%; /* #0070CD */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 27 100% 50%; /* #FF7700 */
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 208 100% 27.6%;
+  --radius: 0.5rem;
+  
+  /* Chart colors */
+  --chart-1: 208 100% 27.6%; /* Primary */
+  --chart-2: 210 100% 40%;   /* Secondary */
+  --chart-3: 27 100% 50%;    /* Accent */
+  --chart-4: 142 71% 45%;    /* Success */
+  --chart-5: 0 84% 60%;      /* Destructive */
+  
+  /* Sidebar specific colors for client dashboard */
+  --sidebar-background: 208 100% 27.6%;
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 0 0% 100%;
+  --sidebar-primary-foreground: 208 100% 27.6%;
+  --sidebar-accent: 27 100% 50%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 208 70% 35%;
+  --sidebar-ring: 0 0% 100%;
+  
+  /* Mobile layout variables */
+  --mobile-nav-height: 56px;
+  --mobile-bottom-nav-height: 60px;
+  --mobile-content-padding: 1rem;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  
+  /* Caixa Econômica colors */
+  --primary: 208 100% 37%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 100% 45%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 27 100% 55%;
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 208 100% 37%;
+  
+  /* Chart colors (slightly brighter for dark mode) */
+  --chart-1: 208 100% 47%;
+  --chart-2: 210 100% 60%;
+  --chart-3: 27 100% 60%;
+  --chart-4: 142 71% 55%;
+  --chart-5: 0 84% 70%;
+  
+  /* Sidebar specific colors */
+  --sidebar-background: 222.2 84% 4.9%;
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 0 0% 100%;
+  --sidebar-primary-foreground: 208 100% 37%;
+  --sidebar-accent: 27 100% 55%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 217.2 32.6% 17.5%;
+  --sidebar-ring: 0 0% 100%;
+}
+
+/* Global styles */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  .client-sidebar {
+    @apply bg-secondary;
+  }
+  
+  .merchant-sidebar {
+    @apply bg-accent text-white;
+  }
+  
+  .admin-sidebar {
+    @apply bg-primary text-white;
+  }
+  
+  /* Estilos responsivos para PWA móvel */
+  @media (max-width: 768px) {
+    body {
+      @apply text-sm;
+    }
+    
+    /* Remove scrollbars em mobile */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* Ajuste para elementos scrolláveis em móvel */
+    .mobile-scroll {
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    
+    .mobile-scroll::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* Classes de layout específicas para mobile */
+    .mobile-container {
+      @apply px-4 py-2;
+    }
+    
+    .mobile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      gap: 1rem;
+    }
+    
+    .mobile-app-icon {
+      @apply flex flex-col items-center justify-center p-2 rounded-xl bg-white dark:bg-gray-800 shadow-sm;
+    }
+    
+    /* Removed conflicting mobile-bottom-nav class that was causing duplicates */
+    
+    .mobile-top-nav {
+      @apply fixed top-0 left-0 right-0 bg-primary text-white flex items-center justify-between px-4 h-[var(--mobile-nav-height)] z-40;
+    }
+    
+    .mobile-page-content {
+      @apply mt-[var(--mobile-nav-height)] mb-[var(--mobile-bottom-nav-height)] py-4 px-4;
+    }
+  }
+}
+
+  /* Custom typography classes */
+  .page-title {
+    @apply text-xl font-bold mb-4;
+  }
+  
+  .section-title {
+    @apply font-medium mb-4;
+  }
+  
+  /* Status badges */
+  .status-active {
+    @apply px-2 py-1 rounded-full text-xs bg-green-100 text-green-800;
+  }
+  
+  .status-pending {
+    @apply px-2 py-1 rounded-full text-xs bg-yellow-100 text-yellow-800;
+  }
+  
+  .status-inactive {
+    @apply px-2 py-1 rounded-full text-xs bg-gray-100 text-gray-800;
+  }
+  
+  .status-completed {
+    @apply px-2 py-1 rounded-full text-xs bg-green-100 text-green-800;
+  }
+  
+  .status-cancelled {
+    @apply px-2 py-1 rounded-full text-xs bg-red-100 text-red-800;
+  }
+
+/* Animações e efeitos especiais */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-slideInUp {
+  animation: slideInUp 0.5s ease-out;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+/* Efeitos de transição */
+.transition-smooth {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos específicos para cada tipo de usuário */
+.client-gradient {
+  background: linear-gradient(135deg, #0080ff, #0057a8);
+}
+
+.merchant-gradient {
+  background: linear-gradient(135deg, #ff9d2f, #ff8000);
+}
+
+.admin-gradient {
+  background: linear-gradient(135deg, #a855f7, #8b5cf6);
+}
+
+/* Estilos para botões específicos de cada tipo de usuário */
+.btn-client {
+  @apply bg-blue-600 hover:bg-blue-700 text-white;
+}
+
+.btn-merchant {
+  @apply bg-orange-500 hover:bg-orange-600 text-white;
+}
+
+.btn-admin {
+  @apply bg-purple-600 hover:bg-purple-700 text-white;
+}

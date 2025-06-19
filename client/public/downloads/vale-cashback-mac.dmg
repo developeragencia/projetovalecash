@@ -1,0 +1,3 @@
+#!/bin/bash
+echo 'Vale Cashback App for macOS'
+exit 0

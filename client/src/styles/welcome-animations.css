@@ -1,0 +1,228 @@
+/* Efeitos animados para a tela de boas-vindas */
+
+/* Partículas flutuantes */
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Fundo com gradiente animado */
+.animated-gradient-bg {
+  background: linear-gradient(-45deg, #0052cc, #3b82f6, #60a5fa, #0073e6);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Efeito de brilho no cartão */
+.card-glow {
+  position: relative;
+}
+
+.card-glow::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #3b82f6, #60a5fa, #93c5fd, #3b82f6);
+  z-index: -1;
+  border-radius: inherit;
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card-glow:hover::before {
+  opacity: 0.7;
+}
+
+/* Efeitos para ícones */
+.icon-bounce {
+  animation: icon-bounce 2s ease infinite;
+}
+
+@keyframes icon-bounce {
+  0%, 100% { 
+    transform: translateY(0);
+  }
+  50% { 
+    transform: translateY(-8px);
+  }
+}
+
+.icon-pulse {
+  animation: icon-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes icon-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+.icon-rotate {
+  animation: icon-rotate 4s linear infinite;
+}
+
+@keyframes icon-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Efeito flutuante suave para elementos de destaque */
+.float-animation {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Efeito de destaque para botões */
+.button-highlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.button-highlight::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+  transform: rotate(30deg);
+  animation: shine-effect 4s infinite;
+}
+
+@keyframes shine-effect {
+  0% {
+    transform: translate(-100%, -100%) rotate(30deg);
+  }
+  20%, 100% {
+    transform: translate(100%, 100%) rotate(30deg);
+  }
+}
+
+/* Efeito de ondas no fundo */
+.wave-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  min-height: 100px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.3' d='M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,202.7C672,203,768,181,864,181.3C960,181,1056,203,1152,208C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") repeat-x;
+  background-size: 100% 100%;
+  animation: wave-animation 20s linear infinite;
+}
+
+.wave-bg.wave-2 {
+  height: 12vh;
+  min-height: 80px;
+  opacity: 0.5;
+  animation: wave-animation 15s linear infinite reverse;
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100vw;
+  }
+}
+
+/* Efeito de slider animado */
+.slide-in-left {
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Efeito de foco para cartões ativos */
+.card-focus {
+  transition: all 0.3s ease;
+}
+
+.card-focus.active {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+  z-index: 10;
+}
+
+/* Efeitos para dispositivos móveis */
+@media (max-width: 640px) {
+  .mobile-optimize {
+    animation-duration: 0.7s !important;
+    transition-duration: 0.3s !important;
+  }
+  
+  .reduce-motion {
+    animation: none !important;
+    transition: none !important;
+  }
+}

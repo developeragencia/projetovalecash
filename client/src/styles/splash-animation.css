@@ -1,0 +1,456 @@
+/* Elegante e Minimalista Splash Screen System */
+/* Design clean e moderno com fundo branco */
+
+/* Animação de rotação suave para elementos */
+@keyframes gentle-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animação de pulso elegante */
+@keyframes elegant-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* Animação de fade-in para texto */
+@keyframes fade-in-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animação colorida da barra de progresso */
+@keyframes colorful-progress {
+  0% {
+    background-position: 0% 50%;
+    box-shadow: 0 0 10px rgba(61, 181, 78, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(245, 130, 32, 0.5);
+  }
+  100% {
+    background-position: 100% 50%;
+    box-shadow: 0 0 10px rgba(61, 181, 78, 0.3);
+  }
+}
+
+/* Animação do raio de luz */
+@keyframes light-ray-animation {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) translateX(0) scaleX(0);
+  }
+  20% {
+    opacity: 0.7;
+    transform: rotate(180deg) translateX(10px) scaleX(1);
+  }
+  40% {
+    opacity: 0;
+    transform: rotate(360deg) translateX(0) scaleX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg) translateX(0) scaleX(0);
+  }
+}
+
+/* Animação de onda para decoração */
+@keyframes wave-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Animação de flutuação para partículas decorativas */
+@keyframes float-particle {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) translateX(var(--random-x));
+    opacity: 0;
+  }
+}
+
+/* Animação de cintilação para textos */
+@keyframes text-shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Animação para o carregador pontilhado */
+@keyframes dot-bounce {
+  0%, 80%, 100% { 
+    transform: translateY(0) scale(1);
+  }
+  40% { 
+    transform: translateY(-10px) scale(1.1);
+  }
+}
+
+/* Efeito de brilho para o logo */
+@keyframes logo-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(61, 181, 78, 0.4));
+  }
+  25% {
+    filter: drop-shadow(0 0 8px rgba(245, 130, 32, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(61, 181, 78, 0.6));
+  }
+  75% {
+    filter: drop-shadow(0 0 8px rgba(245, 130, 32, 0.5));
+  }
+}
+
+/* Efeito de escala para o logo */
+@keyframes logo-scale {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===== CLASSES DE ESTILO CLEAN ===== */
+
+.splash-clean-container {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+
+/* Background com gradiente muito sutil */
+.splash-background-clean {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(135deg, rgba(61, 181, 78, 0.05) 0%, #ffffff 50%, rgba(245, 130, 32, 0.05) 100%);
+}
+
+/* Elementos decorativos com formas geométricas */
+.splash-decoration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.decoration-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(61, 181, 78, 0.1), rgba(245, 130, 32, 0.05));
+  animation: elegant-pulse 8s infinite ease-in-out;
+}
+
+.decoration-circle:nth-child(1) {
+  top: 10%;
+  left: 15%;
+  width: 300px;
+  height: 300px;
+  opacity: 0.2;
+  animation-duration: 7s;
+}
+
+.decoration-circle:nth-child(2) {
+  bottom: 5%;
+  right: 10%;
+  width: 250px;
+  height: 250px;
+  opacity: 0.15;
+  animation-duration: 9s;
+  animation-delay: 1s;
+}
+
+.decoration-circle:nth-child(3) {
+  top: 50%;
+  right: 25%;
+  width: 100px;
+  height: 100px;
+  opacity: 0.1;
+  animation-duration: 5s;
+}
+
+/* Linhas decorativas */
+.decoration-line {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    rgba(61, 181, 78, 0) 0%, 
+    rgba(245, 130, 32, 0.1) 50%, 
+    rgba(61, 181, 78, 0) 100%);
+}
+
+.decoration-line:nth-child(4) {
+  top: 30%;
+  left: 0;
+  right: 0;
+  animation: wave-animation 8s infinite ease-in-out;
+}
+
+.decoration-line:nth-child(5) {
+  bottom: 40%;
+  left: 0;
+  right: 0;
+  animation: wave-animation 8s infinite ease-in-out reverse;
+  animation-delay: 1s;
+}
+
+/* Container do logo com efeito de glow */
+.logo-container-clean {
+  position: relative;
+  z-index: 10;
+  animation: logo-glow 3s ease-in-out infinite;
+}
+
+.logo-animation-clean {
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  animation: logo-scale 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Raios de luz ao redor do logo */
+.light-rays {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.light-ray {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    rgba(61, 181, 78, 0) 0%, 
+    rgba(245, 130, 32, 0.2) 50%, 
+    rgba(61, 181, 78, 0) 100%);
+  transform-origin: left center;
+}
+
+.light-ray:nth-child(1) {
+  animation: light-ray-animation 7s infinite;
+}
+
+.light-ray:nth-child(2) {
+  animation: light-ray-animation 7s infinite;
+  animation-delay: 1.5s;
+}
+
+.light-ray:nth-child(3) {
+  animation: light-ray-animation 7s infinite;
+  animation-delay: 3s;
+}
+
+.light-ray:nth-child(4) {
+  animation: light-ray-animation 7s infinite;
+  animation-delay: 4.5s;
+}
+
+/* Título com animação elegante */
+.title-clean {
+  margin-top: 30px;
+  text-align: center;
+  z-index: 10;
+  animation: fade-in-up 1s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.title-clean h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0070f3;
+  margin-bottom: 8px;
+}
+
+.title-clean p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 24px;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Barra de progresso estilizada */
+.progress-container-clean {
+  width: 280px;
+  margin-top: 30px;
+  z-index: 10;
+  animation: fade-in-up 1s ease-out forwards;
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+.progress-bar-clean {
+  height: 6px;
+  width: 100%;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) inset;
+}
+
+.progress-fill-clean {
+  height: 100%;
+  background: linear-gradient(90deg, #3db54e, #f58220, #3db54e);
+  background-size: 200% 100%;
+  border-radius: 8px;
+  animation: colorful-progress 2s ease-in-out infinite;
+}
+
+.progress-text-clean {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.progress-message-clean {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1rem;
+  color: #334155;
+  font-weight: 500;
+  background: linear-gradient(90deg, 
+    #3db54e 0%, 
+    #f58220 50%, 
+    #3db54e 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: text-shimmer 3s linear infinite;
+}
+
+/* Loader de pontos estilizado */
+.dots-loader-clean {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  z-index: 10;
+  animation: fade-in-up 1s ease-out forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+}
+
+.dot-clean {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3db54e;
+  animation: dot-bounce 1.4s infinite ease-in-out;
+}
+
+.dot-clean:nth-child(1) {
+  animation-delay: -0.32s;
+  background-color: #3db54e;
+}
+
+.dot-clean:nth-child(2) {
+  animation-delay: -0.16s;
+  background-color: #f58220;
+}
+
+.dot-clean:nth-child(3) {
+  background-color: #3db54e;
+}
+
+/* Partículas flutuantes sutis */
+.particles-clean {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle-clean {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(61, 181, 78, 0.1);
+  pointer-events: none;
+  animation: float-particle 7s linear infinite;
+}
+
+.particle-clean:nth-child(2n) {
+  background-color: rgba(245, 130, 32, 0.1);
+}
+
+/* Rodapé com copyright */
+.copyright-clean {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.8rem;
+  color: #64748b;
+  text-align: center;
+  z-index: 10;
+  animation: fade-in-up 1s ease-out forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+  background: linear-gradient(90deg, 
+    rgba(61, 181, 78, 0.8) 0%, 
+    rgba(245, 130, 32, 0.8) 50%, 
+    rgba(61, 181, 78, 0.8) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 500;
+  animation: text-shimmer 3s linear infinite;
+}

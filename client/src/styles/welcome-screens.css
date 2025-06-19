@@ -1,0 +1,236 @@
+/* Estilos para a tela de boas-vindas */
+.welcome-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* Fundo sutilmente animado */
+.welcome-background {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e6f3ff 50%, #f0f8ff 100%);
+  z-index: -2;
+}
+
+/* Ondas decorativas animadas */
+.welcome-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat-x;
+  transform-origin: center bottom;
+}
+
+.wave1 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' opacity='.25' fill='%23007BFF'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 100% 100px;
+  height: 100px;
+  animation: wave-animation 25s linear infinite;
+  opacity: 0.2;
+}
+
+.wave2 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' opacity='.25' fill='%230070f3'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 100% 80px;
+  height: 80px;
+  animation: wave-animation 20s linear infinite reverse;
+  opacity: 0.15;
+  bottom: 10px;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Conteúdo principal */
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin-bottom: 80px;
+  z-index: 10;
+  height: 100%;
+  max-height: 600px;
+}
+
+/* Slides de conteúdo */
+.welcome-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Ícones animados */
+.icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 30px;
+}
+
+.welcome-icon {
+  color: #0070f3;
+  filter: drop-shadow(0 4px 8px rgba(0, 112, 243, 0.2));
+}
+
+.icon-glow {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 112, 243, 0.1) 0%, rgba(0, 112, 243, 0) 70%);
+  animation: pulse 3s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+}
+
+/* Texto */
+.welcome-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0070f3;
+  margin-bottom: 16px;
+}
+
+.welcome-description {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 30px;
+  max-width: 380px;
+  line-height: 1.5;
+}
+
+/* Indicadores de progresso */
+.progress-indicators {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.progress-dot.active {
+  width: 30px;
+  border-radius: 20px;
+  background-color: #0070f3;
+}
+
+/* Botões de navegação */
+.welcome-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.skip-button {
+  color: #6b7280;
+}
+
+.next-button, .start-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-left: auto;
+}
+
+.start-button {
+  margin: 0 auto;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 14px rgba(0, 118, 255, 0.39);
+}
+
+/* Animação para os botões */
+.next-button:hover, .start-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 112, 243, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .welcome-content {
+    padding: 16px;
+    margin-bottom: 60px;
+  }
+  
+  .welcome-title {
+    font-size: 1.75rem;
+  }
+  
+  .welcome-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .icon-container {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-icon {
+    width: 70px;
+    height: 70px;
+  }
+}

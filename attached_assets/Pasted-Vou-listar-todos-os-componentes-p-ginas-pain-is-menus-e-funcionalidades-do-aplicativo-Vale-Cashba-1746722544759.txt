@@ -1,0 +1,142 @@
+Vou listar todos os componentes, páginas, painéis, menus e funcionalidades do aplicativo Vale Cashback:
+
+Estrutura do Aplicativo Vale Cashback
+Página de Login
+Interface de login com campos:
+Campo de e-mail
+Campo de senha
+Botões para seleção de tipo de usuário (Cliente, Lojista, Admin)
+Botão "Entrar"
+Link "Esqueceu a senha?"
+Link "Cadastre-se"
+Seção informativa (hero) com benefícios do sistema
+Validação de campos obrigatórios
+Feedback visual de estado de carregamento durante autenticação
+Exibição de mensagens de erro
+Painel do Cliente
+Dashboard principal
+Saldo de cashback
+Histórico de transações
+Gráfico de acumulado de cashback
+Menu lateral com:
+Página inicial
+Transações
+Transferências
+QR Code
+Perfil
+Sair
+Funcionalidades:
+Visualização de saldo de cashback
+Visualização de histórico de transações
+Geração de QR Code para pagamentos
+Transferência de cashback para outros usuários
+Sistema de referência/indicação
+Edição de perfil
+Painel do Lojista
+Dashboard principal
+Resumo de vendas
+Gráfico de vendas por período
+Taxa de comissão (2%)
+Menu lateral com:
+Página inicial
+Vendas
+Produtos/Serviços
+Scanner QR Code
+Clientes
+Perfil
+Sair
+Funcionalidades:
+Registro de vendas com cálculo automático de cashback
+Leitura de QR Code para pagamentos
+Gerenciamento de produtos/serviços
+Visualização de clientes e histórico
+Edição de perfil da loja
+Painel do Administrador
+Dashboard principal
+Estatísticas gerais (usuários, transações, volumes)
+Gráficos de desempenho do sistema
+Menu lateral com:
+Página inicial
+Usuários
+Lojas
+Transações
+Transferências
+Configurações
+Sair
+Funcionalidades:
+Gestão de usuários (clientes e lojistas)
+Aprovação/rejeição de novos lojistas
+Visualização de todas as transações
+Configuração de taxas (cashback, comissão)
+Exportação de relatórios
+Gestão de configurações globais
+Componentes Comuns
+Cabeçalho responsivo
+Menu lateral (sidebar) com opções específicas por tipo de usuário
+Rodapé com informações de copyright
+Notificações push
+PWA para instalação em dispositivos móveis
+Tema com cores inspiradas na Caixa Econômica (#004B8D, #0070CD, #FF7700)
+Grade responsiva para exibição em diferentes dispositivos
+Banco de Dados (Tabelas)
+usuarios - Armazena dados dos usuários
+cashbacks - Controla saldo e totais de cashback
+lojas - Informações das lojas cadastradas
+transacoes - Registro de compras/vendas
+transferencias - Registro de transferências de cashback
+referencias - Sistema de indicação entre usuários
+configuracoes - Parâmetros globais do sistema
+Funcionalidades Técnicas
+Autenticação segura com Passport.js
+Gestão de sessão com PostgreSQL
+Validação de dados com Zod
+Criptografia de senha com bcrypt
+API RESTful para comunicação cliente-servidor
+Geração de QR Code dinâmico
+Responsividade para dispositivos móveis e desktop
+Service Worker para suporte offline
+Instalação como PWA nos dispositivos
+Páginas de Cadastro/Registro
+Formulário de cadastro de cliente com campos:
+Nome completo
+E-mail
+Senha
+Confirmação de senha
+Telefone
+CPF
+Formulário de cadastro de lojista com campos adicionais:
+Nome da loja
+CNPJ
+Endereço
+Cidade/Estado
+Categoria de negócio
+Este é o detalhamento completo do sistema Vale Cashback, conforme implementado no aplicativo.
+
+eu quero o detalhamento completo painel do admin, cliente e logista, pagina de login, liste tudo 1 a 1
+
+2 minutes ago
+AUNDEFINED
+
+Detalhamento Completo do Sistema Vale Cashback
+Página de Login - Detalhamento Item a Item
+Cabeçalho
+
+Logo do Vale Cashback
+Título "Vale Cashback"
+Subtítulo "Faça login para continuar"
+Seleção de Tipo de Usuário
+
+Botão "Cliente" - cor azul (#0070CD)
+Botão "Lojista" - cor laranja (#FF7700)
+Botão "Admin" - cor azul escuro (#004B8D)
+Formulário de Login
+
+Campo de e-mail (obrigatório)
+Campo de senha (obrigatório)
+Validação em tempo real dos campos
+Mensagens de erro específicas
+Links Auxiliares
+
+Link "Esqueceu a senha?"
+Link "Cadastre-se"
+Botão de Ação
