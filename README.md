@@ -10,6 +10,7 @@ Este é um backup completo do sistema Vale Cashback com todas as funcionalidades
 - **Backend**: Express.js com TypeScript, PostgreSQL, Drizzle ORM
 - **Autenticação**: Sistema completo de login/logout com sessões
 - **Banco de Dados**: PostgreSQL com 130+ usuários reais (91 clientes, 36 lojistas, 3 admins)
+Banco de dados usado é o neon https://neon.com/ usa postgres com recursos extras CDN online como websocket, o sistema é totalmente dependente do neon, não funciona em sua totalidade só com postgresql puro. 
 
 ### Funcionalidades Principais
 
